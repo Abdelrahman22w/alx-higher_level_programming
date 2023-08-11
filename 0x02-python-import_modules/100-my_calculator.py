@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     """ handle basic operations"""
-    from calculator_1.py import add, sub, mul, div
+    from calculator_1 import add, sub, mul, div
     import sys
     count = len(sys.argv) - 1
     if count != 3:
