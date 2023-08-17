@@ -1,9 +1,9 @@
 #!usr/bin/pyshon3
 def uniq_add(my_list=[]):
-    sum = 0
     new = []
-    for i in my_list:
-        if i not in new:
-            sum += i
-            new.append(i)
-    return i
+    sum = 0
+    for num in my_list:
+        if num not in new:
+            sum += num
+            new.append(num)
+    return num
