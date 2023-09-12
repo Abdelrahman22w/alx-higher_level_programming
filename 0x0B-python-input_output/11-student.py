@@ -29,5 +29,9 @@ class Student:
             return self.__dict__
         
         def reload_from_json(self, json):
+            """
+            Replaces all attributes of the Student
+            """
+
             for i, j in json.items():
                 setattr(self, i, j)
