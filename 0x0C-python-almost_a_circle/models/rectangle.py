@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Define rectange base"""
 from models.base import Base
 
@@ -136,7 +137,15 @@ class Rectangle(Base):
                             self.x = v
                         elif k == "y":
                             self.y = v
-                        
+            def to_dictionary(self):
+                """Return the dictionary representation of a Rectangle."""
+                return {
+                    "id": self.id,
+                    "width": self.width,
+                    "height": self.height,
+                    "x": self.x,
+                    "y": self.y
+                }
 
             
             def __str__(self):
