@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Module for Base unit tests.'''
+'''Module for Base unit'''
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -286,6 +286,7 @@ were given"
         self.assertEqual(str(list_in[0]), str(list_out[0]))
         self.assertNotEqual(id(list_in[1]), id(list_out[1]))
         self.assertEqual(str(list_in[1]), str(list_out[1]))
+
 
 if __name__ == "__main__":
     unittest.main()
