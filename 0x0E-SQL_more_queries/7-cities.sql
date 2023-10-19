@@ -9,6 +9,6 @@ CREATE DATABASE IF NOT exists hbtn_0d_usa;
 -- If table already exists, script should not fail
 CREATE TABLE IF NOT exists hbtn_0d_usa.cities(
     id INT UNIQUE AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    state_id INT NOT NULL FOREIGN KEY REFERENCE TO hbtn_0d_usa.states(id),
+    state_id INT NOT NULL FOREIGN KEY references hbtn_0d_usa.states(id),
     name VARCHAR(256) NOT NULL
 );
