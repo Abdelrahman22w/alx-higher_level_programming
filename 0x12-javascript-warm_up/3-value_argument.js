@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!usr/bin/env node
 const args = process.argv[2];
 if (args == undefined)
 {
