@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#!usr/bin/node
 const size = process.argv[2];
 if (isNaN(size))
 {
