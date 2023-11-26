@@ -1,7 +1,9 @@
 #!/usr/bin/node
+const myArgs = process.argv.slice(2);
+let result = 0;
 function add (a, b) {
-  return parseInt(a) + parseInt(b);
-  }
-  const num1 = process.argv[2];
-  const num2 = process.argv[3];
-  console.log(add(num1, num2));
+  result = a + b;
+  return result;
+}
+add(parseInt(myArgs[0]), parseInt(myArgs[1]));
+console.log(result);
