@@ -1,9 +1,9 @@
 #!/usr/bin/node
-if (!process.argv[2] || process.argv.length === 3) {
-    console.log(0);
-  } else {
-    const array = process.argv.slice(2).sort((a, b) => a - b);
-    // using spread operator 🍒
-    // let [a, b, ...array] = process.argv.sort();
-    console.log(array[array.length - 2]);
-  }
+'use strict';
+let nextMax = 0;
+let args = process.argv.slice(2);
+if (args.length > 1) {
+  args.sort();
+  nextMax = args[args.length - 2];
+}
+console.log(nextMax);
