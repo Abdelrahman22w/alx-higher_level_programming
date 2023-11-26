@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const count = process.argv.length;
 if (count < 3)
 {
