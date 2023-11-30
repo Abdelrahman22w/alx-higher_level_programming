@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /**
- * function to reverse a speicific list
- * @param {list} list - list to be examined
+ * function to reverse a list
+ * @param {list} list - list to examine
  * @returns {number} - the reversed version of a list
  */
 exports.esrever = function (list) {

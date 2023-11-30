@@ -6,38 +6,38 @@ class Rectangle {
         this.height = h;
       }
     }
-
+  
     /**
-     * @property {method} print - prints the rectangle using X
+     * @property {method} print - prints the rectangle using the character X
      * @returns void
      */
-    print() {
-        for (let i = 0; i < this.height; i++) {
-            let s = '';
-            for (let j = 0; j < this.width; j++) {
-                s += 'X';
-            }
-            console.log(s);
+    print () {
+      for (let i = 0; i < this.height; i++) {
+        let s = '';
+        for (let j = 0; j < this.width; j++) {
+          s += 'X';
         }
+        console.log(s);
+      }
     }
-
+  
     /**
-     * @property {method} rotate - exhanges the length and the height
+     * @property {method} rotate - exchanges the width and the height of the rectangle
      * @returns void
      */
-    rotate() {
-        const temp = this.width;
-        this.width = this.height;
-        this.height = temp;
+    rotate () {
+      const temp = this.width;
+      this.width = this.height;
+      this.height = temp;
     }
-
+  
     /**
-     * @property {method} double - multiply the width and height of rec by 2
+     * @property {method} double - multiples the width and the height of the rectangle by 2
      * @returns void
      */
-    double() {
-        this.width *= 2;
-        this.height *= 2;
+    double () {
+      this.width *= 2;
+      this.height *= 2;
     }
   }
   
